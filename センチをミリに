@@ -1,0 +1,4 @@
+n = gets.to_i
+
+input_line = n*10
+puts input_line
