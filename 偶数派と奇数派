@@ -1,0 +1,12 @@
+#N, M の 2 つの数字が、偶数と奇数のペアであれば "YES"、そうでなければ "NO" を出力
+input_line = gets
+s = input_line.split
+N = s[0].to_i
+M = s[1].to_i
+#ここまでは標準入力から数値取得
+
+if (N%2==0 && M%2==1) ||  (N%2==1 && M%2==0)
+    puts "YES"
+else
+    puts "NO"
+end
