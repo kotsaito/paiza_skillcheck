@@ -1,0 +1,9 @@
+#与えれた数字nから１までの数字を全て足した数を出す
+n = gets.to_i
+sum=0
+
+n.times do|num|
+sum += num+1
+end
+
+puts sum
