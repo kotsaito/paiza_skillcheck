@@ -1,0 +1,19 @@
+#numの数の内Xの倍数の場合はAを出力、Yの倍数の場合はBを出力、XとYの倍数でABを出力
+input_line = gets
+s = input_line.split
+num = s[0].to_i
+X = s[1].to_i
+Y = s[2].to_i
+#ここまでは標準入力から数値取得
+
+num.times do |i|
+    if (i+1)%X==0 && (i+1)%Y==0
+        puts "AB"
+    elsif (i+1)%X==0
+        puts "A"
+    elsif (i+1)%Y==0
+        puts "B"
+    else
+        puts "N"
+    end
+end
