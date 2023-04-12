@@ -1,0 +1,6 @@
+#打ち込んだ文字を+で囲む
+cha = gets.chomp
+num =cha.length
+puts  "+"*(num+2)
+puts "+#{cha}+"
+puts  "+"*(num+2)
