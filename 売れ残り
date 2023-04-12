@@ -1,0 +1,14 @@
+#mkgの商品をまずp%うり、売れ残りのうちさらにq%売った残りを出す
+
+input_line = gets
+s = input_line.split
+m = s[0].to_i
+p = s[1].to_i
+q = s[2].to_i
+
+p_1=1-(p/100.to_f)
+q_1=1-(q/100.to_f)
+
+r=m*p_1*q_1
+
+puts r
