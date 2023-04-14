@@ -1,0 +1,19 @@
+#半径rのボールが入る箱を昇順に並べる
+#箱はn個、それぞれ高さh、幅w、奥行きdが与えれれる
+input_line = gets
+s = input_line.split
+n = s[0].to_i
+r = s[1].to_i
+
+n.times do |i|
+
+input_line = gets
+s = input_line.split
+h = s[0].to_i
+w = s[1].to_i
+d = s[2].to_i
+
+if h >= r*2 && w >= r*2 && d >= r*2
+ puts i+1
+end    
+end    
