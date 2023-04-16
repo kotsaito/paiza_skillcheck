@@ -1,0 +1,25 @@
+#ラーメン店、N店舗をMカ月運営したときに内何店舗が赤字か
+#Aが店舗の建設費、Bが1月当たりの人件費、Cがラーメン１杯あたりの利益、pはMカ月で売れてラーメンの数
+
+input_line = gets
+s = input_line.split
+N = s[0].to_i
+M = s[1].to_i
+
+input_line = gets
+s = input_line.split
+A = s[0].to_i
+B = s[1].to_i
+C = s[2].to_i
+
+count = 0
+
+N.times do
+    p = gets.to_i
+    profit = (p*C) - A - (B*M)
+    if profit<0
+        count=count+1
+    end
+end
+
+puts count
