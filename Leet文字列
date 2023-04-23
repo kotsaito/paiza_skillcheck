@@ -1,0 +1,8 @@
+#法則に従い特定の文字に置換する
+#"A"=>"4", "E"=>"3", "G"=>"6", "I"=>"1", "O"=>"0", "S"=>"5", "Z"=>"2
+
+string = gets
+n=string.length
+alt = {"A"=>"4", "E"=>"3", "G"=>"6", "I"=>"1", "O"=>"0", "S"=>"5", "Z"=>"2"}
+string = string.gsub(/A|E|G|I|O|S|Z/, alt)
+puts string
