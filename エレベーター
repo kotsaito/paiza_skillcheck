@@ -1,0 +1,15 @@
+N=gets.to_i
+nums=[1]
+
+N.times do
+    nums << gets.to_i
+end
+
+sum = 0
+
+N.times do |i|
+  floor = nums[i]-nums[i+1]
+  sum=sum+floor.abs
+end 
+
+puts sum
