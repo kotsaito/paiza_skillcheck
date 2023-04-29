@@ -1,0 +1,20 @@
+#N台の車のうちi台目とi+1番目の車間距離がA_1でそれぞれ与えられる
+#車間距離がMm以内だと渋滞と定義した時渋滞が何mか計算する
+
+input_line = gets
+s = input_line.split
+N = s[0].to_i
+M = s[1].to_i
+
+num=N-1
+
+sum=0
+
+num.times do
+A_1=gets.to_i
+if A_1 <= M
+    sum=sum+A_1
+end
+end
+
+puts sum
