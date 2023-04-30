@@ -1,0 +1,24 @@
+#親カードの数字a、bの数字が与えれられる
+#子カードを与えられる人数nと子カードの数字a_1、b_1がn人にそれぞれ当てられる
+#aとa_1を比べ数が多い方が強い、数字が同じの場合、bとb_1を比べ数字が小さい方が強い
+#親カードと子カードを比べて、親カードの方が強い場合はHigh、世淡い場合はLowとそれぞれ出力
+
+input_line = gets
+s = input_line.split
+a = s[0].to_i
+b = s[1].to_i
+
+n = gets.to_i
+n.times do
+   input_line = gets
+   s = input_line.split
+   a_1 = s[0].to_i
+   b_1 = s[1].to_i
+   if a > a_1 
+       puts "High"
+   elsif a==a_1 && b < b_1
+       puts "High"
+   else
+       puts "Low"
+   end
+end
