@@ -1,0 +1,16 @@
+#縦の画素数Hと横の画素数Wが与えられる
+#中心からy方向にズレるが総数dyとx方向にズレるdxが与えらる
+#何画素分ズレたか合計を出す
+
+input_line = gets
+s = input_line.split
+H = s[0].to_i
+W = s[1].to_i
+
+input_line = gets
+s = input_line.split
+dy = s[0].to_i.abs
+dx = s[1].to_i.abs
+
+sum=H*dx+W*dy-dy*dx
+puts sum
