@@ -1,0 +1,5 @@
+#母音を削除したものをハンドルネームとする
+
+str = gets
+str.delete!("aiueoAIUEO")
+puts str
