@@ -1,0 +1,11 @@
+#365日の中でxの数字が含まれる日が何日あるか
+x = gets.chomp
+array=[*"1".."365"]
+count = 0
+array.each do |i|
+    if i.include?(x)
+        count += 1
+    end
+end
+
+puts count
